@@ -1,0 +1,25 @@
+﻿<Window x:Class="LDAPConnector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LDAPConnector"
+        mc:Ignorable="d"
+        Title="LDAP Connector" Height="394.191" Width="800">
+    <Grid>
+        <Label Content="ベースDN" HorizontalAlignment="Left" Height="29" Margin="20,22,0,0" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="TextBaseDN" HorizontalAlignment="Left" Height="29" Margin="168,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="583" FontSize="16"/>
+
+        <Button x:Name="ButtonConnect" Content="接続確認" HorizontalAlignment="Left" Margin="53,202,0,0" VerticalAlignment="Top" Width="149" Height="50" Click="ButtonConnect_Click"/>
+        <Label Content="LDAP サーバのIPアドレス" HorizontalAlignment="Left" Height="29" Margin="20,56,0,0" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="TextLDAPServer" HorizontalAlignment="Left" Height="29" Margin="168,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="16"/>
+        <Label Content="LDAP ユーザー" HorizontalAlignment="Left" Height="29" Margin="20,90,0,0" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="TextLDAPUser" HorizontalAlignment="Left" Height="29" Margin="168,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="16"/>
+        <Label Content="LDAP パスワード" HorizontalAlignment="Left" Height="29" Margin="20,124,0,0" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="TextLDAPPass" HorizontalAlignment="Left" Height="29" Margin="168,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="16"/>
+        <Button x:Name="ButtonAdd" Content="OU作成" HorizontalAlignment="Left" Margin="241,202,0,0" VerticalAlignment="Top" Width="149" Height="50" Click="ButtonAdd_Click" />
+        <Button x:Name="ButtonAddCN" Content="CN作成" HorizontalAlignment="Left" Margin="422,202,0,0" VerticalAlignment="Top" Width="149" Height="50" Click="ButtonAddCN_Click" />
+        <Button x:Name="ButtonRemoveOU" Content="OU削除" HorizontalAlignment="Left" Margin="241,288,0,0" VerticalAlignment="Top" Width="149" Height="50" Click="ButtonRemoveOU_Click" />
+        <Button x:Name="ButtonRemoveCN" Content="CN削除" HorizontalAlignment="Left" Margin="422,288,0,0" VerticalAlignment="Top" Width="149" Height="50" Click="ButtonRemoveCN_Click" />
+    </Grid>
+</Window>
