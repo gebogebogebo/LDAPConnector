@@ -15,12 +15,13 @@ namespace LDAPConnector
         {
             InitializeComponent();
 
-            TextBaseDN.Text = "dc=stdg2wwcybbena2jljui3enboa,dc=mx,dc=internal,dc=cloudapp,dc=net";
+            TextBaseDN.Text = "dc=gebogebo,dc=com";
+            TextLDAPUser.Text = "admin";
         }
 
         private void ButtonConnect_Click(object sender, RoutedEventArgs e)
         {
-            string message = "";
+            string message = ""; 
             try {
                 string lserver = $"LDAP://{TextLDAPServer.Text}/{TextBaseDN.Text}";
                 string domainAndUsername = $"cn={TextLDAPUser.Text},{TextBaseDN.Text}";
